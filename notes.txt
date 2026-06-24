@@ -1,0 +1,84 @@
+Clone - to clone the online repository 
+	git clone link
+	
+Staus - displays the state of the code 
+	git status
+	
+Cd -  change directory meaning jab folder ke andar ek aur folder ho aur usko access karna ho   
+
+TAB - to auto complete 
+Clear - to clear the terminal 
+Ls - to list all files 
+Ls -a - to se all files including hidden files 
+	If in this list there is .git folder then it is a github file 
+	
+Add - adds new or changed files in your working directory to the git staging area . 
+git add file_name (or . For all files )
+
+Commit - it is the record of change 
+git commit -m "some message"
+
+Push - uplaod local repo content ot remote repo 
+	 git push origin main 
+	
+	
+HOW TO INITIATE CODE FROM LOCAL TO GLOBAL 
+
+mkdir - It is used to make a new directory (folder )
+	mkdir folder_name
+
+Init - it is used to create a new repo 
+git init 
+
+Then create files add them as usual then commit them as usual 
+Then create a repo on github  without readme 
+
+git remote add origin link -  this is used to add a new remote repo.
+
+git remote -v - to check the repo (remote)
+
+git branch - to check branch 
+git branch -M ("main"- new name) - to rename branch
+git checkout -b branch_ name - to create a new branch 
+git checkout branch_ name - to navigate through branch 
+git branch -d branch_ name - to delete branch 
+
+MERGING CODE 
+
+WAY ONE
+
+git diff branch_ name - to compare commits, branches, files and more 
+git merge branch_ name - to merge two branches 
+
+WAY TO 
+
+Create a  PR (pull request - it lers you tell others about changes you've pushed to a branch in a repository on GitHub)
+
+
+How to see it on local 
+
+pull command -  used to fetcch and download content from a remote repo and immediately update the local repo to match that content. 
+git pull origin main
+
+UNDOING CHANGES 
+
+ case1- staged changes 
+	Git reset file_name
+	Git reset 
+	
+git log - to see hash of commits (history of all commits all of them I have done)
+Then q to quit 
+Case-2 commited changes (for one commit)
+	git reset HEAD ~1
+	
+Case3: commited changes (for many commits )
+	git reset <- commit hash>
+	git reset --hard <-commit hash >(vs code pe reverse ho jayega )
+
+Fork- a fork is a new repository thay shares code and visibility settings with the original "upstream" repository.
+Fork is a rough copy 
+
+
+ 
+ 
+
